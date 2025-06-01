@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مندوب شي إن الكوري | Korean SHEIN Rep</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #ff4c8b; color: white; text-align: center; padding: 30px 20px; }
+    section { padding: 30px 20px; text-align: center; }
+    .coupon { background: #fff0f5; border-radius: 10px; padding: 20px; margin: 20px auto; width: 80%; max-width: 400px; }
+    a.button { background: #ff4c8b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+    .lang-switch { text-align: center; margin-top: 10px; }
+    .lang-switch a { margin: 0 10px; text-decoration: underline; color: #555; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">👗 مندوب شي إن الكوري</h1>
+    <p id="subtitle">احصلي على كوبونات خصم حصرية من شي إن!</p>
+  </header>
+
+  <div class="lang-switch">
+    <a onclick="setLang('ar')">العربية</a> | <a onclick="setLang('en')">English</a>
+  </div>
+
+  <section>
+    <div class="coupon">
+      <p id="coupon1">استخدمي الكود <strong>KOREA15</strong> لتحصلي على خصم 15%</p>
+      <a class="button" href="https://www.shein.com/" target="_blank" id="shopBtn1">تسوقي الآن</a>
+    </div>
+    <div class="coupon">
+      <p id="coupon2">كود خاص: <strong>KPOP20</strong> - خصم 20%</p>
+      <a class="button" href="https://www.shein.com/" target="_blank" id="shopBtn2">اكتشفي العروض</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="followMe">تابعني على فيسبوك</h2>
+    <a class="button" href="https://www.facebook.com/share/1C4ua9ngqH/?mibextid=wwXIfr" target="_blank">Facebook</a>
+  </section>
+
+  <script>
+    const translations = {
+      ar: {
+        title: "👗 مندوب شي إن الكوري",
+        subtitle: "احصلي على كوبونات خصم حصرية من شي إن!",
+        coupon1: "استخدمي الكود KOREA15 لتحصلي على خصم 15%",
+        coupon2: "كود خاص: KPOP20 - خصم 20%",
+        shopBtn1: "تسوقي الآن",
+        shopBtn2: "اكتشفي العروض",
+        followMe: "تابعني على فيسبوك"
+      },
+      en: {
+        title: "👗 Korean SHEIN Representative",
+        subtitle: "Get exclusive SHEIN discount codes!",
+        coupon1: "Use code KOREA15 to get 15% off!",
+        coupon2: "Special code: KPOP20 - Get 20% off!",
+        shopBtn1: "Shop Now",
+        shopBtn2: "View Offers",
+        followMe: "Follow me on Facebook"
+      }
+    };
+
+    function setLang(lang) {
+      for (const key in translations[lang]) {
+        document.getElementById(key).textContent = translations[lang][key];
+      }
+      document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    }
+  </script>
+</body>
+</html>
